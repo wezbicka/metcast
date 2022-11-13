@@ -1,7 +1,7 @@
 import requests
 
 
-def make_request(location):
+def get_weather_forecast(location):
     payload = {
         "nTqm": "",
         "lang": "ru",
@@ -20,8 +20,8 @@ def main():
         "Cherepovets",
     ]
     for location in locations:
-        reply = make_request(location)
-        print(reply)
+        metcast = get_weather_forecast(location)
+        print(metcast)
 
 
 if __name__ == '__main__':
