@@ -3,7 +3,7 @@ import requests
 
 def get_weather_forecast(location):
     payload = {
-        "nTqm": "",
+        "nTqM": "",
         "lang": "ru",
     }
     url_template = 'http://{domen}/{article}'
